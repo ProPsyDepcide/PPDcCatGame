@@ -177,7 +177,7 @@ const Playground = () => {
     for (const food of Eat) {
       if (food.top === RunY && food.left === RunX) {
         Eat.splice(Eat.indexOf(food), 1)
-        const plus = Count + 10000
+        const plus = Count + 1
         setCount(plus)
         play()
       }
