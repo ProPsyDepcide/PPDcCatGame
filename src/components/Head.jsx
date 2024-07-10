@@ -16,7 +16,7 @@ const Head = () => {
       <Flex alignItems={'center'}>
         <Container border={'3px solid #00ffff'} mt={'0.5%'} p={'10px 50px 10px 50px'} borderRadius={'10px'} maxW={'container.md'} >
           <Flex justifyContent={'space-between'} alignItems={'center'}>
-            <Image onClick={play} className='logo' w={'100px'} src={ changelogo ? "/public/gamecontent/images/cot2.png" : "/public/gamecontent/images/cot.png"} />
+            <Image onClick={play} className='logo' w={'100px'} src={ changelogo ? "/src/assets/images/cot2.png" : "/src/assets/images/cot.png"} />
             <Text onClick={playmusic} className={s.fontCat} color={'#00ffff'} fontSize={'30'} >у меня живет культурный кот</Text>
           </Flex>
         </Container>
