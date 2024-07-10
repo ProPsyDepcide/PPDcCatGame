@@ -668,7 +668,7 @@ const Playground = () => {
       </Box>
       <Button pos={'absolute'} top={'7%'} right={'3%'} color={'black'} bg={'#00ffff'} onClick={onOpen}>Спрайты</Button>
 
-      <Box bg={showBackground ? 'url(/public/grass.jpg)' : 'black'} boxShadow='outline' p='6' rounded='md' position={'relative'} mt={'1%'} ml={'30px'} w={'1300px'} h={'500px'}>
+      <Box bg={showBackground ? 'url(/public/images/grass.jpg)' : 'black'} boxShadow='outline' p='6' rounded='md' position={'relative'} mt={'1%'} ml={'30px'} w={'1300px'} h={'500px'}>
 
         {vasyka &&
           <Image
@@ -678,7 +678,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/Vasyka.png'
+            src='/public/images/Vasyka.png'
           />
         }
         {rijik &&
@@ -689,7 +689,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/Rijik.png'
+            src='/public/images/Rijik.png'
           />
         }
         {dumka &&
@@ -700,7 +700,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/dumka.png'
+            src='/public/images/dumka.png'
           />
         }
         {maxwell &&
@@ -711,7 +711,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/max.png'
+            src='/public/images/max.png'
           />
         }
         {grishka &&
@@ -722,7 +722,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/fatcat.png'
+            src='/public/images/fatcat.png'
           />
         }
         {ERROR &&
@@ -733,7 +733,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/aftontextureerror.png'
+            src='/public/images/aftontextureerror.png'
           />
         }
         {TIPSI &&
@@ -744,7 +744,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/CatTipsi.png'
+            src='/public/images/CatTipsi.png'
           />
         }
         {Sayori &&
@@ -755,29 +755,29 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/public/SayoriKitty.png'
+            src='/public/images/SayoriKitty.png'
           />
         }
 
         {Col.map((wall, index) => (
           wall1 &&
-          <Image src='/public/wall.png' key={index} top={wall.top + 'px'} left={wall.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
+          <Image src='/public/images/wall.png' key={index} top={wall.top + 'px'} left={wall.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
         ))}
 
         {Col.map((wall, index) => (
           wall2 &&
-          <Image src='/public/block.png' key={index} top={wall.top + 'px'} left={wall.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
+          <Image src='/public/images/block.png' key={index} top={wall.top + 'px'} left={wall.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
         ))}
 
 
         {Eat.map((food, index) => (
           milk1 &&
-          <Image src='/public/milk.png' key={index} top={food.top + 'px'} left={food.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
+          <Image src='/public/images/milk.png' key={index} top={food.top + 'px'} left={food.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
         ))}
 
         {Eat.map((food, index) => (
           milk2 &&
-          <Image src='/public/fish.png' key={index} top={food.top + 'px'} left={food.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
+          <Image src='/public/images/fish.png' key={index} top={food.top + 'px'} left={food.left + 'px'} position={'absolute'} h={'100px'} w={'100px'} Image />
         ))}
 
       </Box>
@@ -803,7 +803,7 @@ const Playground = () => {
 
             <Box pb={'2%'}>
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>начальный</Text>
-              <Image onClick={VasykaState} w={'120px'} h={'120px'} src='/public/Vasyka.png' />
+              <Image onClick={VasykaState} w={'120px'} h={'120px'} src='/public/images/Vasyka.png' />
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>Васька</Text>
             </Box>
             {/* ===================================================| купить Рыжика |==================================================================================== */}
@@ -816,7 +816,7 @@ const Playground = () => {
                 <Button mb={'45%'} onClick={minusCount} mt={'45%'} bg={'#00ffff'}>Купить</Button>
               }
               {boughtrijik &&
-                <Image onClick={RijikState} w={'120px'} h={'120px'} src='/public/Rijik.png' />
+                <Image onClick={RijikState} w={'120px'} h={'120px'} src='/public/images/Rijik.png' />
               }
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>Рыжик</Text>
             </Box>
@@ -830,7 +830,7 @@ const Playground = () => {
                 <Button mb={'45%'} onClick={minusCountDumka} mt={'45%'} bg={'#00ffff'}>Купить</Button>
               }
               {boughtDumka &&
-                <Image onClick={Dumkastate} w={'120px'} h={'120px'} src='/public/dumka.png' />
+                <Image onClick={Dumkastate} w={'120px'} h={'120px'} src='/public/images/dumka.png' />
               }
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>Думка</Text>
             </Box>
@@ -844,7 +844,7 @@ const Playground = () => {
                 <Button mb={'45%'} onClick={minusCountMaxwell} mt={'45%'} bg={'#00ffff'}>Купить</Button>
               }
               {boughtMaxwell &&
-                <Image onClick={Maxwellstate} w={'120px'} h={'120px'} src='/public/max.png' />
+                <Image onClick={Maxwellstate} w={'120px'} h={'120px'} src='/public/images/max.png' />
               }
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>Максвел</Text>
             </Box>
@@ -858,7 +858,7 @@ const Playground = () => {
                 <Button mb={'45%'} onClick={minusCountGrishka} mt={'45%'} bg={'#00ffff'}>Купить</Button>
               }
               {boughtGrishka &&
-                <Image onClick={Grishkastate} w={'120px'} h={'120px'} src='/public/fatcat.png' />
+                <Image onClick={Grishkastate} w={'120px'} h={'120px'} src='/public/images/fatcat.png' />
               }
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>Гришка</Text>
             </Box>
@@ -872,7 +872,7 @@ const Playground = () => {
                 <Button mb={'45%'} onClick={minusCountERROR} mt={'45%'} bg={'#00ffff'}>Купить</Button>
               }
               {boughtERROR &&
-                <Image onClick={ERRORstate} w={'120px'} h={'120px'} src='/public/aftontextureerror.png' />
+                <Image onClick={ERRORstate} w={'120px'} h={'120px'} src='/public/images/aftontextureerror.png' />
               }
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>ERROR</Text>
             </Box>
@@ -886,7 +886,7 @@ const Playground = () => {
                 <Button mb={'45%'} onClick={minusCountTIPSI} mt={'45%'} bg={'#00ffff'}>Купить</Button>
               }
               {boughtTIPSI &&
-                <Image onClick={TIPSIstate} w={'120px'} h={'120px'} src='/public/CatTipsi.png' />
+                <Image onClick={TIPSIstate} w={'120px'} h={'120px'} src='/public/images/CatTipsi.png' />
               }
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>Типси</Text>
             </Box>
@@ -900,7 +900,7 @@ const Playground = () => {
                 <Button mb={'45%'} onClick={minusCountSayori} mt={'45%'} bg={'#00ffff'}>Купить</Button>
               }
               {boughtSayori &&
-                <Image onClick={Sayoristate} w={'120px'} h={'120px'} src='/public/sayoriKitty.png' />
+                <Image onClick={Sayoristate} w={'120px'} h={'120px'} src='/public/images/sayoriKitty.png' />
               }
               <Text pt={'10px'} color={'#00ffff'} className={s.fontCat} textAlign={'center'}>Сайори</Text>
             </Box>
