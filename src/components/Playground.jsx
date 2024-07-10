@@ -4,6 +4,7 @@ import { Box, Button, Container, Drawer, DrawerBody, DrawerContent, DrawerHeader
 import s from './style.module.css';
 import useSound from "use-sound";
 import sfx from '../../public/mp3/plyunk.mp3';
+import image from '../assets/images/Vasyka.png';
 
 
 const Playground = () => {
@@ -678,7 +679,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src={'/src/assets/images/Vasyka.png'}
+            src={image}
           />
         }
         {rijik &&
