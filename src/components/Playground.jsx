@@ -678,7 +678,7 @@ const Playground = () => {
             className='coshka'
             position={'absolute'}
             w={'100px'}
-            src='/src/assets/images/Vasyka.png'
+            src={'/src/assets/images/Vasyka.png'}
           />
         }
         {rijik &&
