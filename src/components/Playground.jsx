@@ -117,7 +117,6 @@ const Playground = () => {
 
   useEffect(() => {
     const handleKeyPress = (e) => {
-
       if (e.key === 'r' || e.key === 'к') {
         location.reload()
       }
@@ -177,12 +176,11 @@ const Playground = () => {
     for (const food of Eat) {
       if (food.top === RunY && food.left === RunX) {
         Eat.splice(Eat.indexOf(food), 1)
-        const plus = Count + 1
+        const plus = Count + 5
         setCount(plus)
         play()
       }
     }
-
 
     document.addEventListener('keypress', handleKeyPress)
 
@@ -670,6 +668,23 @@ const Playground = () => {
     console.log(kotstatus)
   }, [])
 
+  const getRandomInt = (max) => Math.floor(Math.random() * max)
+
+  const deleteBlock = () => {
+    if (Col.length === 0) {
+      location.reload()
+      return
+    }
+
+    const ranIND = getRandomInt(Col.length)
+    const delCol = [...Col]
+    delCol.splice(ranIND, 1)[1]
+    setCol(delCol)
+
+    const minusO = Count - 2
+    setCount(minusO)
+  }
+
 
   return (
     <>
@@ -677,9 +692,10 @@ const Playground = () => {
         <Text pl={'0%'} fontSize={'30px'} className={s.fontCat} color={'#00ffff'}>
           Счет: {Count}
         </Text>
-        <Text className={s.fontCat} color={'#00ffff'}>R - Далее</Text>
+        <Text className={s.fontCat} color={'#00ffff'}>R - Перезагрузка</Text>
       </Box>
       <Button pos={'absolute'} top={'7%'} right={'3%'} color={'black'} bg={'#00ffff'} onClick={onOpen}>Спрайты</Button>
+      <Button pos={'absolute'} fontSize={'15px'} top={'7%'} right={'12%'} color={'black'} bg={'#00ffff'} onClick={deleteBlock}>Измена <br />за 2 очка</Button>
 
       <Box bg={showBackground ? '#00BC00' : 'black'} boxShadow='outline' p='6' rounded='md' position={'relative'} mt={'1%'} ml={'30px'} w={'1300px'} h={'500px'}>
 
